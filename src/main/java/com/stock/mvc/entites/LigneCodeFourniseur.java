@@ -15,14 +15,14 @@ public class LigneCodeFourniseur implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_ligne_code_fourniseur")
-    private Long IdLigneCodeFourniseur;
+    private Long idLigneCodeFourniseur;
 
     public Long getIdLigneCodeFourniseur() {
-        return IdLigneCodeFourniseur;
+        return idLigneCodeFourniseur;
     }
 
     public void setIdLigneCodeFourniseur(Long idLigneCodeFourniseur) {
-        IdLigneCodeFourniseur = idLigneCodeFourniseur;
+        this.idLigneCodeFourniseur = idLigneCodeFourniseur;
     }
 
 }

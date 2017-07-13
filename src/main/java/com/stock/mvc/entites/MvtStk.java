@@ -15,14 +15,14 @@ public class MvtStk implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_mvt_stk")
-    private Long IdMvtStk;
+    private Long idMvtStk;
 
     public Long getIdMvtStk() {
-        return IdMvtStk;
+        return idMvtStk;
     }
 
     public void setIdMvtStk(Long idMvtStk) {
-        IdMvtStk = idMvtStk;
+        this.idMvtStk = idMvtStk;
     }
 
 }

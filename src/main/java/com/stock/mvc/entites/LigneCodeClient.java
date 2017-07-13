@@ -14,15 +14,15 @@ public class LigneCodeClient implements Serializable {
 
     @Id
     @GeneratedValue
-    @Column(name = "Id_ligne_code_client")
-    private Long IdLigneCodeClient;
+    @Column(name = "id_ligne_code_client")
+    private Long idLigneCodeClient;
 
     public Long getIdLigneCodeClient() {
-        return IdLigneCodeClient;
+        return idLigneCodeClient;
     }
 
     public void setIdLigneCodeClient(Long idLigneCodeClient) {
-        IdLigneCodeClient = idLigneCodeClient;
+        this.idLigneCodeClient = idLigneCodeClient;
     }
 
 }

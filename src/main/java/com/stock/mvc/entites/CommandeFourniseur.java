@@ -15,14 +15,14 @@ public class CommandeFourniseur implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_commande_fourniseur")
-    private Long IdCommandeFourniseur;
+    private Long idCommandeFourniseur;
 
     public Long getIdCommandeFourniseur() {
-        return IdCommandeFourniseur;
+        return idCommandeFourniseur;
     }
 
     public void setIdCommandeFourniseur(Long idCommandeFourniseur) {
-        IdCommandeFourniseur = idCommandeFourniseur;
+        this.idCommandeFourniseur = idCommandeFourniseur;
     }
 
 }

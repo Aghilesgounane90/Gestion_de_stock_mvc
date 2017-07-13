@@ -15,14 +15,14 @@ public class CommandeClient implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_commande_client")
-    private Long IdCommandeClient;
+    private Long idCommandeClient;
 
     public Long getIdCommandeClient() {
-        return IdCommandeClient;
+        return idCommandeClient;
     }
 
     public void setIdCommandeClient(Long idCommandeClient) {
-        IdCommandeClient = idCommandeClient;
+        this.idCommandeClient = idCommandeClient;
     }
 
 }

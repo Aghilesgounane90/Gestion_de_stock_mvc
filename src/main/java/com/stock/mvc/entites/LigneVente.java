@@ -15,14 +15,14 @@ public class LigneVente implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_ligne_vente")
-    private Long LigneVente;
+    private Long idLigneVente;
 
-    public Long getLigneVente() {
-        return LigneVente;
+    public Long getIdLigneVente() {
+        return idLigneVente;
     }
 
-    public void setLigneVente(Long ligneVente) {
-        LigneVente = ligneVente;
+    public void setIdLigneVente(Long idLigneVente) {
+        this.idLigneVente = idLigneVente;
     }
 
 }

@@ -15,14 +15,14 @@ public class Utilisateur implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id_utilisateur")
-    private Long IdUtilisateur;
+    private Long idUtilisateur;
 
     public Long getIdUtilisateur() {
-        return IdUtilisateur;
+        return idUtilisateur;
     }
 
     public void setIdUtilisateur(Long idUtilisateur) {
-        IdUtilisateur = idUtilisateur;
+        this.idUtilisateur = idUtilisateur;
     }
 
 }
