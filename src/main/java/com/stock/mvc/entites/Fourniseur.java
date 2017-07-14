@@ -10,36 +10,36 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "client")
-public class Client implements Serializable {
+@Table(name = "fourniseur")
+public class Fourniseur implements Serializable {
 
     @Id
     @GeneratedValue
-    private Long idClient;
+    private Long idFourniseurt;
 
     private String nom;
 
     private String prenom;
 
-    private String Adresse;
+    private String adresse;
 
     private String mail;
 
     private String photo;
 
-    @OneToMany(mappedBy = "client")
-    private List<CommandeClient> commandeClients;
+    @OneToMany(mappedBy = "fourniseur")
+    private List<CommandeFourniseur> commandeFourniseurs;
 
-    public Client() {
+    public Fourniseur() {
         super();
     }
 
-    public Long getIdClient() {
-        return idClient;
+    public Long getIdFourniseurt() {
+        return idFourniseurt;
     }
 
-    public void setIdClient(Long idClient) {
-        this.idClient = idClient;
+    public void setIdFourniseurt(Long idFourniseurt) {
+        this.idFourniseurt = idFourniseurt;
     }
 
     public String getNom() {
@@ -58,14 +58,6 @@ public class Client implements Serializable {
         this.prenom = prenom;
     }
 
-    public String getAdresse() {
-        return Adresse;
-    }
-
-    public void setAdresse(String adresse) {
-        Adresse = adresse;
-    }
-
     public String getMail() {
         return mail;
     }
@@ -82,12 +74,20 @@ public class Client implements Serializable {
         this.photo = photo;
     }
 
-    public List<CommandeClient> getCommandeClients() {
-        return commandeClients;
+    public String getAdresse() {
+        return adresse;
     }
 
-    public void setCommandeClients(List<CommandeClient> commandeClients) {
-        this.commandeClients = commandeClients;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public List<CommandeFourniseur> getCommandeFourniseurs() {
+        return commandeFourniseurs;
+    }
+
+    public void setCommandeFourniseurs(List<CommandeFourniseur> commandeFourniseurs) {
+        this.commandeFourniseurs = commandeFourniseurs;
     }
 
 }
